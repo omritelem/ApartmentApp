@@ -12,22 +12,24 @@ import thunk from 'redux-thunk';
 import Main from './main';
 
 // Import the combined reducers
-// import reducers from './reducers/index';
+import reducers from './reducers/index';
 
 // STEP 1 CREATE THE STORE
 const middleware = applyMiddleware(thunk, logger);
-const store =  createStore(middleware);
-// const store =  createStore(reducers, middleware);
+const store =  createStore(reducers, middleware);
 
 import {Router, Route, IndexRoute, browserHistory} from 'react-router';
+import ApartmentList from './components/Apartment/apartmentList';
+import ApartmentProfile from './components/Apartment/apartmentProfile';
+import ApartmentProfileForm from './components/Apartment/apartmentProfileForm';
 
 const Routes = (
   <Provider store={store}>
     <Router history={browserHistory}>
       <Route path="/" component={Main}>
-        {/* <IndexRoute component={BooksList}/>
-        <Route path="/admin" component={BooksForm}/>
-        <Route path="/cart" component={Cart}/> */}
+        <IndexRoute component={ApartmentList}/>
+        <Route path="/ApartmentProfile" component={ApartmentProfile}/>
+        <Route path="/apartmentProfileForm" component={ApartmentProfileForm}/>
       </Route>
     </Router>
   </Provider>

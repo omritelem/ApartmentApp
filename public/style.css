@@ -13,6 +13,49 @@ body {
   margin: 20px 0;
 }
 
-.badge {
+.apartmentItem{
+  text-align: center;
+}
 
+.apartmentItem h3{
+  font-weight: 400;
+}
+
+button.link{
+  background: none;
+  border:none;
+  padding: 0;
+  /*margin: 0;
+  outline: none;
+  outline-offset: 0;
+  color: white;*/
+}
+
+.profileImage {
+  height: 150px;
+  margin: auto;
+}
+
+.profileImageUser{
+  maxWidth: '20%';
+  /*max-width: 20% !important;
+  width: 40px !important;;
+  height: 40px !important;;*/
+  /*margin: auto;*/
+}
+
+.userApartments{
+  width: 400px;
+  left: 20px;
+  position: relative;
+}
+
+.profileData h4{
+  padding-bottom: 1em;
+}
+
+.profileImagePage{
+  height: 150px;
+  margin: auto;
+  margin-left: 400px;
 }

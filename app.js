@@ -18,6 +18,15 @@ app.use('/api', function(req, res){
   apiProxy.web(req, res);
 })
 
+// Proxy To Api
+const apiProxy2 = httpProxy.createProxyServer({
+  target:'http://localhost:3002'
+});
+
+app.use('/api2', function(req, res){
+  apiProxy2.web(req, res);
+})
+
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -45,5 +54,7 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+app.locals.title = 'omri';
 
 module.exports = app;

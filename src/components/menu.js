@@ -1,6 +1,6 @@
 "use strict"
 import React from 'react';
-import {Nav, NavItem, Navbar, Badge} from 'react-bootstrap';
+import {Nav, NavItem, Navbar, Badge, Glyphicon} from 'react-bootstrap';
 
 class Menu extends React.Component{
     render(){
@@ -15,15 +15,22 @@ class Menu extends React.Component{
             {/* The collapse tag means that in other device the items will be collapsed
             into one dropdown menu */}
            <Navbar.Collapse>
-             <Nav pullRight>
-               <NavItem eventKey={1} href="/about">אודות</NavItem>
-               <NavItem eventKey={2} href="/contacts">יצירת קשר</NavItem>
-               <NavItem eventKey={2} href="/Apartment">יצירת דירה</NavItem>
+             {/* <Nav pullRight> */}
+             <Nav>
+               <NavItem eventKey={1} href="/about">About</NavItem>
+               <NavItem eventKey={2} href="/contacts">Contacts</NavItem>
+               {/* <NavItem eventKey={2} href="/Apartment">יצירת דירה</NavItem> */}
              </Nav>
-             <Nav pullRight>
-               <NavItem eventKey={1} href="/admin">ניהול<span/>
+             {/* <Nav pullRight> */}
+             <Nav>
+               <NavItem eventKey={1} href="/admin">Admin<span/>
                <Badge className="badge">
                </Badge>
+               </NavItem>
+             </Nav>
+             <Nav pullRight>
+               <NavItem eventKey={1} href="/apartmentProfileForm">Create<span />
+               <Glyphicon glyph="glyphicon glyphicon-home" style={{marginLeft: '0.5em'}} /><span />
                </NavItem>
              </Nav>
            </Navbar.Collapse>

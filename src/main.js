@@ -14,8 +14,7 @@ class Main extends React.Component{
     return (
       <div>
       <Menu />
-        {/* {this.props.children} */}
-        <h1>Hello First Redux App :)</h1>
+        {this.props.children}
       <Footer />
       </div>
     );
