@@ -158,7 +158,7 @@ class ApartmentProfile extends React.Component{
           <div className="alert alert-dismissible alert-warning">
                <Row>
                 <Col xs={12} sm={12} key={apartment._id}>
-                  <h3>Constans:</h3>
+                  <h3>Contacts:</h3>
                   <Table bordered condensed hover>
                     <thead>
                       <tr>

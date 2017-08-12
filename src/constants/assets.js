@@ -27,7 +27,7 @@ module.exports = {
     1: "Apartment",
     2: "Garden Apartment",
     3: "Penthouse",
-    4: "STUDIO/LOFT",
+    4: "Studio/Loft",
     5: "Basement",
     6: "Duplex",
     7: "Triplex",
