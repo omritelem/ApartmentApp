@@ -6,6 +6,7 @@ yarn install
 ```
 
 ### Compiles and hot-reloads for development
+This command serves the app at http://localhost:3000
 ```
 yarn run serve
 ```
