@@ -5,7 +5,7 @@
 yarn install
 ```
 
-### Serves the app on localhost `http://localhost:3000` with hot-reload
+### Serves the app on localhost http://localhost:3000 with hot-reload
 ```
 yarn run serve
 ```
