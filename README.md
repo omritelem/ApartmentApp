@@ -1,4 +1,4 @@
-# duda-app
+# DuDa-app
 
 ## Project setup
 ```
