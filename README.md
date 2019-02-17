@@ -1,3 +1,5 @@
+# duda-app
+
 ## Project setup
 ```
 yarn install
@@ -13,7 +15,7 @@ yarn run serve
 yarn run build
 ```
 
-### Lints and fixes files
+### Lints and files fixes
 ```
 yarn run lint
 ```
