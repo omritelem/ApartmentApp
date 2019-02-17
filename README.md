@@ -5,8 +5,7 @@
 yarn install
 ```
 
-### Compiles and hot-reloads for development
-This command serves the app at http://localhost:3000
+### Start the `webpack-dev-server` on localhost `http://localhost:3000` with hot-reload.
 ```
 yarn run serve
 ```
