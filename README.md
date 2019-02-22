@@ -1,4 +1,4 @@
-# Duda-app
+# Recommendation-app
 
 ## Project setup
 ```
